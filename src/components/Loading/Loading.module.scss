@@ -1,0 +1,8 @@
+@import "../../assets/global/global.scss";
+
+
+.loadingStep {
+    @include animation('loading 1.4s infinite both');
+    animation-delay: 0.4s;
+}
+

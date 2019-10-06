@@ -1,0 +1,84 @@
+@import "../../assets/global/global.scss";
+
+.chatBody {
+  overflow-y: scroll;
+  margin-top: 2px;
+  padding-top: 6px;
+
+  @media screen and (max-width: 568px) {
+    height: calc(100% - 112px) !important;
+  }
+}
+
+.textMessageContainer {
+  align-items: flex-end;
+  display: flex;
+}
+
+.avatarContainer {
+  display: inline-block;
+  padding: 6px;
+}
+
+.avatar {
+  @include animation("scale 0.3s ease forwards");
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px 0px;
+  height: 40px;
+  min-width: 40px;
+  padding: 3px;
+  transform: scale(0);
+  width: 40;
+}
+
+.bubble {
+  @include animation("scale 0.3s ease forwards");
+  border-radius: 18px 18px 18px 18px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  // color: ${props => (props.user ? props.theme.userFontColor : props.theme.botFontColor)};
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 12px;
+  transform: scale(0);
+  transform-origin: left;
+}
+
+.optionList {
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.optionItemContainer {
+  @include animation("scale 0.3s ease forwards");
+  cursor: pointer;
+  display: inline-block;
+  margin: 2px;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.optionItem {
+  background: #004dcd;
+  border-radius: 22px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 12px;
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 77, 205);
+  }
+  transition: 0.3s;
+}
+
+
+
+.activeOption {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 77, 205);
+}

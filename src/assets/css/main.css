@@ -1,0 +1,249 @@
+html {
+  height: 100%; }
+
+body {
+  font-family: Graphik, Helvetica, Arial, sans-serif; }
+
+@-webkit-keyframes scale {
+  100% {
+    transform: scale(1); } }
+
+@-moz-keyframes scale {
+  100% {
+    transform: scale(1); } }
+
+@-ms-keyframes scale {
+  100% {
+    transform: scale(1); } }
+
+@-o-keyframes scale {
+  100% {
+    transform: scale(1); } }
+
+@keyframes scale {
+  100% {
+    transform: scale(1); } }
+
+@-webkit-keyframes loading {
+  0% {
+    opacity: 0.2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
+
+@-moz-keyframes loading {
+  0% {
+    opacity: 0.2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
+
+@-ms-keyframes loading {
+  0% {
+    opacity: 0.2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
+
+@-o-keyframes loading {
+  0% {
+    opacity: 0.2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
+
+@keyframes loading {
+  0% {
+    opacity: 0.2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
+
+input:disabled::-webkit-input-placeholder {
+  color: lightgrey; }
+
+input:disabled:-moz-placeholder {
+  color: lightgrey; }
+
+input:disabled::-moz-placeholder {
+  color: lightgrey; }
+
+input:disabled:-ms-input-placeholder {
+  color: lightgrey; }
+
+.floatButton {
+  align-items: center;
+  cursor: pointer;
+  bottom: 32px;
+  border-radius: 100%;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  height: 56px;
+  justify-content: center;
+  position: fixed;
+  right: 32px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  width: 56px;
+  z-index: 999; }
+
+.active {
+  transform: scale(0); }
+
+.header {
+  background: linear-gradient(135deg, #3047ec 0%, #0f22a7 100%);
+  color: #fff;
+  fill: #fff;
+  align-items: center;
+  display: flex;
+  height: 56px;
+  justify-content: space-between;
+  padding: 0 10px; }
+
+.closeIcon {
+  cursor: pointer; }
+
+.botContent {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: fixed;
+  width: 350px;
+  height: 520px;
+  z-index: 999;
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+  bottom: 32px;
+  right: 32px; }
+  @media screen and (max-width: 568px) {
+    .botContent {
+      border-radius: 0;
+      padding: 0 1%;
+      right: 0; } }
+
+.active {
+  transform: scale(1); }
+
+@-webkit-keyframes scale {
+  100% {
+    transform: scale(1); } }
+
+@-moz-keyframes scale {
+  100% {
+    transform: scale(1); } }
+
+@-ms-keyframes scale {
+  100% {
+    transform: scale(1); } }
+
+@-o-keyframes scale {
+  100% {
+    transform: scale(1); } }
+
+@keyframes scale {
+  100% {
+    transform: scale(1); } }
+
+@-webkit-keyframes loading {
+  0% {
+    opacity: 0.2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
+
+@-moz-keyframes loading {
+  0% {
+    opacity: 0.2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
+
+@-ms-keyframes loading {
+  0% {
+    opacity: 0.2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
+
+@-o-keyframes loading {
+  0% {
+    opacity: 0.2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
+
+@keyframes loading {
+  0% {
+    opacity: 0.2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
+
+input:disabled::-webkit-input-placeholder {
+  color: lightgrey; }
+
+input:disabled:-moz-placeholder {
+  color: lightgrey; }
+
+input:disabled::-moz-placeholder {
+  color: lightgrey; }
+
+input:disabled:-ms-input-placeholder {
+  color: lightgrey; }
+
+.loadingStep {
+  -webkit-animation: loading 1.4s infinite both;
+  -moz-animation: loading 1.4s infinite both;
+  -ms-animation: loading 1.4s infinite both;
+  -o-animation: loading 1.4s infinite both;
+  animation: loading 1.4s infinite both;
+  animation-delay: 0.4s; }
+
+.inputContainer {
+  position: relative; }
+
+.userInput {
+  border: 0;
+  border-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 1px solid #eee;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  opacity: 1;
+  outline: none;
+  padding: 16px 52px 16px 10px;
+  width: 100%;
+  -webkit-appearance: none; }
+
+.submitButton {
+  background-color: transparent;
+  border: 0;
+  border-bottom-right-radius: 10px;
+  box-shadow: none;
+  outline: none;
+  padding: 14px 16px 12px 16px;
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .submitButton:before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%; }
+  .submitButton:not(:disabled):hover {
+    opacity: 0.7; }
